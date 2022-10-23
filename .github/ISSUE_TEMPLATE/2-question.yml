@@ -1,0 +1,36 @@
+name: 💬 GitHub Question or Problem
+description: Mention an I-don't-know-how-to question so I can answer it.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do you have a common I-don't-know-how-to question that is not answered in this repository? You can mention it here, but first:
+        
+        Check that you can find your answer in [GitHub Docs](https://docs.github.com/).
+        This form is for asking for help with a problem on GitHub, not a question about this repository.
+        Search for issues to see if anyone else is having the same problem. 👍 that issue if you have the same problem.
+        
+        If you can't find your answer anywhere, continue.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: My question or problem
+      description: What problem are you having?
+      placeholder: I don't know how to follow octocat.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional context
+      description: If you need to clarify anything or add comments, you can do so here.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        I might add an answer to your question in this repository if I know a solution.
