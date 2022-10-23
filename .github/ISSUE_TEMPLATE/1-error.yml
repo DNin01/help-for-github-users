@@ -1,0 +1,48 @@
+name: 🔎 Report an error
+description: Let me know about a typo or mistake.
+labels: ["error"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found a mistake? Help me fix it!
+        
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      description: What kind of error is this?
+      options:
+        - A typo
+        - Incorrect information
+        - Confusing information
+        - Something else
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Where the error is
+      description: Tell me what file has an error.
+      placeholder: questions/question.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What the error is
+      description: Tell me where in the file the mistake is and what is wrong.
+      placeholder: |
+        Actually, you can't do X.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional context
+      description: If you need to clarify anything or add comments, you can do so here.
+    validations:
+      required: false
