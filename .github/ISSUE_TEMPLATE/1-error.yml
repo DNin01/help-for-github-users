@@ -1,11 +1,11 @@
-name: 🔎 Report an error
+name: 🔎 Report an Error
 description: Let me know about a typo or mistake.
 labels: ["error"]
 body:
   - type: markdown
     attributes:
       value: |
-        Found a mistake? Help me fix it!
+        Found a mistake or something that's confusing? Help me fix it!
         
   - type: dropdown
     id: kind
