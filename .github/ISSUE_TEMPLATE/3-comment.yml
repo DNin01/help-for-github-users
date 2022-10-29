@@ -1,0 +1,25 @@
+name: 👋 Comments
+description: Suggest changes or provide general feedback.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        With the form below, you can leave a comment to talk about one of my provided answers.
+
+  - type: input
+    id: location
+    attributes:
+      label: What I'm talking about
+      description: Tell me what file (or files) you want to talk about.
+      placeholder: questions/question.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comments
+      description: Talk about it here. You could suggest a little change/rewording to make an answer easier to follow, provide additional info, and the like.
+    validations:
+      required: true
