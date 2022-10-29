@@ -1,6 +1,6 @@
 name: 🔎 Report an Error
 description: Let me know about a typo or mistake.
-labels: ["error"]
+labels: ["information", "error"]
 body:
   - type: markdown
     attributes:

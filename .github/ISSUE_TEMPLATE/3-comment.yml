@@ -1,6 +1,6 @@
 name: 👋 Comments
 description: Suggest changes or provide general feedback.
-labels: ["enhancement"]
+labels: ["information", "enhancement"]
 body:
   - type: markdown
     attributes:

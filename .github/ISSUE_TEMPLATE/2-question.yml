@@ -1,6 +1,6 @@
 name: 💬 GitHub Question or Problem
 description: Mention an I-don't-know-how-to question so I can answer it.
-labels: ["enhancement"]
+labels: ["information", "enhancement"]
 body:
   - type: markdown
     attributes:
