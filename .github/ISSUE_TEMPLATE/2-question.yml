@@ -1,23 +1,24 @@
-name: 💬 GitHub Question or Problem
-description: Mention an I-don't-know-how-to question so I can answer it.
+name: 💬 GitHub Question/Problem
+description: Request answers to common questions asking how to do things on GitHub.
 labels: ["information", "enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Do you have a common I-don't-know-how-to question that is not answered in this repository? You can mention it here, but first:
+        Do you have or know someone who has a common I-don't-know-how-to question that is not answered in this repository? You can mention it here.
         
-        Check that you can find your answer in [GitHub Docs](https://docs.github.com/).
-        This form is for asking for help with a problem on GitHub, not a question about this repository.
-        Search for issues to see if anyone else is having the same problem. 👍 that issue if you have the same problem.
+        First:
+        - Real quick, check that you can find your answer in [GitHub Docs](https://docs.github.com/). You can also [ask the GitHub community](https://github.com/orgs/community/discussions).
+        - Use this form to suggest that I answer a frequent question for doing something on GitHub, not a question about this repository.
+        - Search for issues to see if anyone else mentioned your question. You can 👍 that issue if you have the same question.
         
-        If you can't find your answer anywhere, continue.
+        If you couldn't find your answer anywhere, continue.
 
   - type: textarea
     id: problem
     attributes:
-      label: My question or problem
-      description: What problem are you having?
+      label: Question/problem
+      description: What's the question?
       placeholder: I don't know how to follow octocat.
     validations:
       required: true
@@ -32,5 +33,4 @@ body:
 
   - type: markdown
     attributes:
-      value: |
-        I might add an answer to your question in this repository if I know a solution.
+      value: I will give an answer to the question if it's a frequently asked question and I know the answer.
