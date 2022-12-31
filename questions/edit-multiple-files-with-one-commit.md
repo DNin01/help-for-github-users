@@ -1,3 +1,5 @@
+# Modifying multiple files with one commit
+
 If you use the website to commit changes, you probably know how you're only able to edit one file per commit, so in order to edit multiple files, you have to make multiple commits. However, there are other ways to commit to repositories that let you edit multiple files in the same commit.
 
 - [Git](https://docs.github.com/en/get-started/quickstart/set-up-git) (command line)

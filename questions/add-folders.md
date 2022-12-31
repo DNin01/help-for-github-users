@@ -1,3 +1,5 @@
+# Adding directories (folders) to repositories
+
 To add a directory or subdirectory (folder) to a repository...
 
 ## Using the web UI
