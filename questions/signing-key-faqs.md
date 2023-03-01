@@ -4,7 +4,7 @@
 
 A signing key adds a digital signature to your files that prove that they came from you, in short.
 
-In terms of GitHub, because Git can be configured to commit under any name and email and GitHub uses that information to identify which GitHub account made that commit, anyone is able to easily impersonate you by configuring their Git client to use your information in any commit. Signing keys solve that problem because only you will have access to the signing key you use to sign your commits, so if someone tries to impersonate you, they're not going to be able to sign the commit with your signing key, so they cannot prove you were involved in that commit.
+In terms of GitHub, because Git can be configured to commit under any name and email and GitHub uses that information to identify which GitHub account made that commit, anyone is able to easily make it look like you made a commit by configuring their Git client to use your information in any commit. Signing keys solve that problem because only you will have access to the signing key you use to sign your commits, so if someone tries to impersonate you, they're not going to be able to sign the commit with your signing key, so they cannot prove you were involved in that commit.
 
 ### Should I sign my commits?
 
@@ -18,7 +18,7 @@ Vigilant mode adds an "Unverified" label to commits that aren't signed with one 
 
 Only do this if you always sign your commits. Otherwise, it won't really help others differentiate commits you made from commits others made on your behalf.
 
-### What if I don't want a signing key but still want to make signed commits?
+### What if I don't have a signing key but still want to make signed commits?
 
 Commit from the GitHub website or, if you want a code editor, the [github.dev web-based editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor). GitHub will sign those for you, without the need for your own signing key.
 
@@ -36,13 +36,13 @@ That appears next to co-authored commits if the co-authors have [vigilant mode](
 
 ### Should I set my GPG key to expire?
 
-In general, I'd recommend that too. Expiration dates allow the key to eventually stop working even if you lose control of it (like if you forget its passphrase or you lose the key). I personally set my signing keys to last 3 years. But if you don't set an expiration date, you can still revoke your key from GitHub if you ever think it might have been compromised so that GitHub won't mark future commits signed with that key as verified if someone has a hold of it.
+In general, I'd recommend that too. Expiration dates allow the key to eventually stop working even if you can't revoke it. I personally set my signing keys to last 3 years. But if you don't set an expiration date, GitHub still lets you revoke your key in case it's ever compromised. After revoking the key, GitHub won't mark future commits signed with that key as verified, so if someone has a hold of it, it'll basically be useless.
 
 It's also possible to renew your signing keys as long as you still have all of the information about them, resetting the expiration date so they last longer. But you can also make a new one if you're having trouble with that. You should also make a new one (and give it a new passphrase) if you think it was compromised.
 
 ### Should I choose a strong passphrase?
 
-Yes. If your key is compromised, it's not game over as long as your passphrase is strong - it can still protect your signing key so it can't be used by other people. It's basically two-factor authentication, and similar to a PIN for a credit or debit card.
+Yes. If your key is compromised, it's not game over as long as your passphrase is strong - it can still protect your signing key so it can't be used by other people. It's similar to a PIN for a credit or debit card.
 
 After your key is compromised, though, you'll probably want to work on switching to a new signing key and revoking the old one, just in case.
 
@@ -54,8 +54,8 @@ Just make a new one.
 
 ### Does GitHub Desktop sign commits for me like GitHub?
 
-No, because GitHub Desktop actually uses Git under the hood in order to commit, and, again, you can configure Git to use whatever information you want. However, it can automatically sign your commits with _your own_ signing key _if_ you configured Git to sign commits by default.
+No, because GitHub Desktop actually uses Git under the hood in order to commit, and, again, you can configure Git to use whatever information you want. However, it can automatically sign your commits with _your own_ signing key _if_ you configured Git to sign commits by default. Learn how to do that [here](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits).
 
 ## GitHub Docs
 
-For more information, like how to make your own signing key, check out the [GitHub documentation on managing commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification).
+For more information, like how to make your own signing key, check out [Managing commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification) in the GitHub documentation.
