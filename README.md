@@ -1,23 +1,22 @@
 # Help for GitHub users
-This repository provides help, tips, and answers for some GitHub-related things, particularly for features that users often find unclear.
+This repository provides help, tips, and answers for frequently asked GitHub-related questions.
 
-[**📖 Browse the Answers**](https://github.com/DNin01/help-for-github-users/questions)
+[📖 **Browse the Answers**](https://github.com/DNin01/help-for-github-users/questions)
 
-## Still don't know how to do what you want?
-You can submit [issues](https://github.com/DNin01/help-for-github-users/issues) to talk about something that you think many GitHub users probably don't know how to do and that is hard to find an answer to so that I can answer the question (if I know what the answer is, of course). If you find your question in an existing issue and you have the same question, you can 👍 it.
+## Resources
 
-[🕵️‍♂️ **Search for Questions**](https://github.com/DNin01/help-for-github-users/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement+)\
-[👋 **Ask a Question**](https://github.com/DNin01/help-for-github-users/issues/new?assignees=&labels=enhancement&template=2-question.yml)
-
-## Contribute
-You can submit [issues](https://github.com/DNin01/help-for-github-users/issues) to let me know about a mistake or if you've got any comments or ideas for improvements. You can also send [pull requests](https://github.com/DNin01/help-for-github-users/pulls) to actually make these changes.
-
-## Other resources
-
-You may also find some help from...
+If you've ever had a question about how to do something and you don't know where the answer is, check out the following:
 
 [📚 **GitHub Docs**](https://docs.github.com/)\
 [👥 **GitHub Community**](https://github.com/orgs/community/discussions)
+
+## Know of something that a lot of people probably don't know how to do?
+
+You can submit an [issue](https://github.com/DNin01/help-for-github-users/issues) to let me know about something that you think many GitHub users probably don't know how to do and that is hard to find an answer for. If I can answer the question and it's worth including here, I'll do just that!
+
+## Contribute
+
+You can submit an [issue](https://github.com/DNin01/help-for-github-users/issues) to let me know about a mistake or if you've got any comments or ideas for improvements. You can also create [pull requests](https://github.com/DNin01/help-for-github-users/pulls) to actually make these changes.
 
 ---
 

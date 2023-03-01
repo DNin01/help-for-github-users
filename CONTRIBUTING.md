@@ -20,7 +20,7 @@ Suggest improvements from changes to text, new features, and more.
 [💡 **Make a suggestion**](https://github.com/DNin01/help-for-github-users/issues/new)
 
 ### Start a [discussion](https://github.com/DNin01/help-for-github-users/discussions/categories/ideas-and-changes) for an idea
-If you've got an idea for an improvement but don't know how it should work, you can start a discussion about it.
+If you've got an idea for an improvement but don't know how it should work, you can begin a discussion for it.
 
 [👥 **Start a discussion**](https://github.com/DNin01/help-for-github-users/discussions/new?category=ideas-and-changes)
 
@@ -37,15 +37,15 @@ If you don't know how to send a pull request, I'll walk you through. Most of the
 
 After you've got your fork ready to go, let's perform the next steps also using the website (or feel free to use Git or your code editor if you are comfortable).
 
-3. [Create a new branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch). You'll make your changes to this branch. This is very helpful as it lets you have multiple pull requests at once and you won't have to worry about resetting your branch when syncing your fork.
-4. Make your changes. [Edit](https://docs.github.com/en/articles/editing-files) or [create](https://docs.github.com/en/articles/creating-new-files) files then click Commit changes.
+3. [Create a new branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch). You'll make your changes to this branch. This is very helpful as it lets you have multiple pull requests at once and makes some other things easier.
+4. Make your changes. [Edit](https://docs.github.com/en/articles/editing-files) or [create](https://docs.github.com/en/articles/creating-new-files) files then commit the changes to save them.
 5. Going back to the [origin repository](https://github.com/DNin01/help-for-github-users), you should see a message saying that your branch recently had commits. Click "Compare and pull request".
 6. Describe your pull request and click "Create pull request" when you're ready to submit it.
 7. We'll review your changes shortly and update you when we approve your changes.
 
 #### Tips when contributing
 - If you plan to keep making changes, keep your fork after the pull request is merged. You can reuse it to make more branches and pull requests. Sync it if needed whenever you have changes to make.
-- Make sure each pull request has a different purpose. That way, we don't have to merge a bunch of different changes at once and risk some of them being rejected.
+- Make sure each pull request has a different purpose. That way, we don't have to merge a bunch of different changes at once and risk some of them being rejected. You can make a branch for each pending change.
 - Need help? Just ask in [Discussions](https://github.com/DNin01/help-for-github-users/discussions/new?category=help-and-questions).
 
 **Thanks to everyone who has [contributed](https://github.com/DNin01/help-for-github-users/graphs/contributors) and [sent feedback](https://github.com/DNin01/help-for-github-users/issues?q=is%3Aissue+is%3Aclosed+reason%3Acompleted+)!**

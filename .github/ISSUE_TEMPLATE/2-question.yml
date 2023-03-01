@@ -1,16 +1,15 @@
 name: 💬 GitHub Question/Problem
-description: Request answers to common questions asking how to do things on GitHub.
+description: Request answers to common questions about how to do things on GitHub.
 labels: ["information", "enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Do you have or know someone who has a common I-don't-know-how-to question that is not answered in this repository? You can mention it here.
+        Do you know a common I-don't-know-how-to question that is not answered in this repository? You can mention it here.
         
         First:
-        - Real quick, check that you can find your answer in [GitHub Docs](https://docs.github.com/). You can also [check or ask the GitHub community](https://github.com/orgs/community/discussions) if you want.
         - This form is for suggesting that I answer a frequent question about doing something on GitHub. If you'd like to ask a question about _this repository_, go [here](https://github.com/DNin01/help-for-github-users/discussions/categories/help-and-questions).
-        - Search for issues to see if anyone else mentioned your question. You can 👍 that issue if you have the same question.
+        - Search for issues to see if anyone else mentioned your question. You can 👍 that issue if you had the same question.
         
         If you couldn't find your answer anywhere, continue.
 
@@ -18,18 +17,10 @@ body:
     id: problem
     attributes:
       label: Question/problem
-      description: What's the question?
-      placeholder: I don't know how to follow octocat.
+      description: Provide details about the question.
+      placeholder: Some people don't know how to follow octocat.
     validations:
       required: true
-
-  - type: textarea
-    id: details
-    attributes:
-      label: Additional context
-      description: If you need to clarify anything or add comments, you can do so here.
-    validations:
-      required: false
 
   - type: markdown
     attributes:
