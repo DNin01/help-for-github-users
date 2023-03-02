@@ -5,13 +5,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Do you know a common I-don't-know-how-to question that is not answered in this repository? You can mention it here.
+        Do you know a common I-don't-know-how-to question that is not answered in this repository? Suggest including an answer for it with this form.
         
         First:
+        - Real quick, check that the answer can be found easily in [GitHub Docs](https://docs.github.com/).
         - This form is for suggesting that I answer a frequent question about doing something on GitHub. If you'd like to ask a question about _this repository_, go [here](https://github.com/DNin01/help-for-github-users/discussions/categories/help-and-questions).
         - Search for issues to see if anyone else mentioned your question. You can 👍 that issue if you had the same question.
         
-        If you couldn't find your answer anywhere, continue.
+        If you couldn't find the answer anywhere, continue.
 
   - type: textarea
     id: problem
@@ -24,4 +25,4 @@ body:
 
   - type: markdown
     attributes:
-      value: I will give an answer to the question if it's a frequently asked question and I know the answer.
+      value: I will provide an answer to the question if it's a frequently asked question and I know the answer.
