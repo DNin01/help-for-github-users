@@ -4,7 +4,7 @@
 
 A signing key adds a digital signature to your files that prove that they came from you, in short.
 
-In terms of GitHub, because Git can be configured to commit under any name and email and GitHub uses that information to identify which GitHub account made that commit, anyone is able to easily make it look like you made a commit by configuring their Git client to use your information in any commit. Signing keys solve that problem because only you will have access to the signing key you use to sign your commits, so if someone tries to impersonate you, they're not going to be able to sign the commit with your signing key, so they cannot prove you were involved in that commit.
+In terms of GitHub, because Git can be configured to commit under any name and email and GitHub uses that information to identify which GitHub account made that commit, anyone is able to easily make it look like you made a commit by configuring their Git client to use your information in any commit. Signing keys solve that problem by adding authentication to the process. Only you will have access to the signing key(s) you use to sign your commits, so if someone tries to impersonate you, they're not going to be able to sign the commit with your signing key, so they cannot prove you were involved in that commit.
 
 ### Should I sign my commits?
 
@@ -28,7 +28,7 @@ Well, get this. On GitHub, when you're signed into your GitHub account, which on
 
 That's why we need to set up our own way of verifying that it's us for commits we make outside GitHub but can let GitHub do that for us when we're making those changes on GitHub. On the GitHub website, you cannot sign in as anyone else and impersonate them, and no one else can impersonate you either, when it comes to commit authors.
 
-To summarize, you need at least one form of proper verification to prove that a commit came from who the committer says it did, whether it's signing into GitHub and committing from somewhere you're signed in or using a signing key, and both of these only you can do.
+To summarize, you need at least one form of proper authentication to prove that a commit came from who the committer says it did, whether it's signing into GitHub and committing from somewhere you're signed in or using a signing key, and both of these only you can do.
 
 ### What does "partially verified" mean?
 
@@ -42,7 +42,7 @@ It's also possible to renew your signing keys as long as you still have all of t
 
 ### Should I choose a strong passphrase?
 
-Yes. If your key is compromised, it's not game over as long as your passphrase is strong - it can still protect your signing key so it can't be used by other people. It's similar to a PIN for a credit or debit card.
+Yes. If your key is compromised, it's not game over as long as your passphrase is strong - it can still protect your signing key so it can't be used by other people. It's similar to a PIN for a credit or debit card. Even if you have to write it down to remember it, it is still important to use long, strong passphrases since hackers will have unlimited attempts to break the encryption.
 
 After your key is compromised, though, you'll probably want to work on switching to a new signing key and revoking the old one, just in case.
 
