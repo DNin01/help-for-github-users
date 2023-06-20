@@ -14,9 +14,9 @@ body:
       description: What kind of error is this?
       options:
         - A typo
-        - Incorrect information
-        - Confusing information
-        - Something else
+        - Something's incorrect or outdated
+        - Something's confusing or needs clarification
+        - Other
     validations:
       required: true
 
