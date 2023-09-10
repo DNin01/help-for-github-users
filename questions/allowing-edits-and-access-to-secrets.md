@@ -2,18 +2,16 @@
 
 You may have seen a checkbox to allow edits from maintainers when making a pull request before, but you may have also seen the checkbox read "allow edits and **access to secrets** from maintainers" for pull requests that merge commits from forks with workflows. What does it mean? What are the secrets?
 
-Let's look into the terms being used here.
+First, let's learn more about what "maintainer" and "secret" mean, in case you are not aware already.
 
-- A **maintainer** in this context is someone who has the ability to manage or collaborate on the repository you're contributing to. You might see certain badges such as "Member" on comments posted by these people.
+- A **maintainer** in this context is someone who has the ability to manage or collaborate on the repository you're contributing to (a.k.a. the upstream repository). You might see certain badges such as "Member" on comments posted by these people.
 
 - A **secret** is an encrypted variable for use in GitHub Actions workflows (and other things), which are automations that can help manage repositories. Secrets are usually credentials like keys to publish an app to a store or other sensitive information that could result in unauthorized activity if exposed.
 
-The reason access to secrets is mentioned is because allowing others to edit your pull request also means they can make edits you didn't intend, and the one this sentence is trying to warn you about is modifications to workflows that could potentially reveal the values of secrets (for example, a code modification that literally logs its value).
-
-With the power to edit workflows, they can also do things to other parts of your fork outside the pull request (I'm talking other branches).
+If you allow edits from maintainers, they can technically also make edits you didn't intend, such as workflow modifications. With the power to modify workflows, it becomes possible for an unauthorized maintainer to reveal the values of secrets or even gain access to other branches on your fork.
 
 ## Should you be worried?
 
-The good thing is, as long as the maintainers are trustworthy, they shouldn't be messing with those. Otherwise, you can protect your fork by disabling Actions in Settings → Actions → General.
+If you trust the maintainers of the upstream repository not to mess with those, you can allow edits. If you want to be a bit cautious while still allowing edits, any issues resulting from workflow modifications can be prevented by disabling Actions in Settings → Actions → General.
 
 It's also very possible your fork doesn't have any secrets. You can check this in Settings → Secrets and variables.
