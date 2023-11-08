@@ -4,35 +4,35 @@ Recently, GitHub added a new feature, rulesets, which are basically just the new
 
 ## 1. Time for a new ruleset
 
-To start setting up your new ruleset, navigate to Settings → Rules → Rulesets and click "New branch ruleset".
+To start setting up your new ruleset, go to the rulesets list by navigating to Settings → Rules → Rulesets, then select "New ruleset" and choose "New branch ruleset".
 
-## 2. What branch will this ruleset apply to?
+## 2. Name your ruleset
 
-You'll need to tell your ruleset what branch or branches to target. In our case, we want to add restrictions to our default branch, so scroll down to the "Target branches" section and click "Add a target" then "Include default branch". If you want to protect a different branch, choose "Include by pattern" and type in the name of the branch you want to target.
+First off, we get to enter the name of this ruleset. We'll call it "Require pull request".
 
 ## 3. Enforce the rules
 
-In order for the rules to work, you'll have to change the enforcement status in the "General" section to "Active".
+In order for the rules in this ruleset to be applied, you'll have to set the enforcement status to "Active". Don't forget this!
 
-## 4. Name your ruleset
+## 4. What branch will this ruleset apply to?
 
-I suppose while we're up here, we should enter the name of this ruleset. We'll call it "Require pull request".
+You'll also need to tell your ruleset what branch or branches to target. In our case, we want to add restrictions to our default branch, so scroll down to the "Target branches" section and click "Add a target" then "Include default branch". If you want to protect a different branch, choose "Include by pattern" and type in the name of the branch you want to target.
 
 ## 5. Set the rules
 
-Under "Branch protections", choose the rules you want to set. You can look up all of the rules you can set [here](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets). We'll check "Require a pull request before merging", which will make it so that commits to this branch must come from a pull request.
+Under "Branch protections", choose the rules you want to set. You can look up all of the rules you can set [here](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets). We'll check "Require a pull request before merging", which will make it so that whatever you want to commit to this branch must come from a pull request.
 
 Sometimes checking a box like this one will reveal more options which you can set as you wish.
 
 ## 6. Grant ourselves the keys
 
-You may not want this ruleset to apply to you or trusted maintainers. In that case, you can choose who can bypass the rules in the "Bypass list" section. We'll add the admin role so repository admins aren't affected by these rules.
+Depending on the rules you've set, you may want to allow some people such as yourself or trusted maintainers to bypass your rules. You can do that by clicking "Add bypass" in the "Bypass list" section and selecting the roles you want to give permission to bypass the rules. For this ruleset, we'll add the admin role.
 
-If nobody is added to the bypass list, then the rule will apply to everyone, but you can still disable it manually if you ever need to bypass it.
+If nobody is added to the bypass list, then the rules will apply to everyone including admins, but you can disable it manually if you ever need to bypass it.
 
 ## 7. We're done!
 
-Finally, create the ruleset by clicking "Create".
+Finally, create the ruleset by clicking "Create". You might also be prompted to authenticate.
 
 Need more details? Learn more in [GitHub Docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/managing-rulesets-for-a-repository#creating-a-ruleset).
 
