@@ -36,13 +36,13 @@ That appears next to co-authored commits if the co-authors have [vigilant mode](
 
 ### Should I set my GPG key to expire?
 
-In general, I'd recommend that too. Expiration dates allow the key to eventually stop working even if you can't revoke it. I personally set my signing keys to last 3 years. But if you don't set an expiration date, GitHub still lets you revoke your key in case it's ever compromised. After revoking the key, GitHub won't mark future commits signed with that key as verified, so if someone has a hold of it, it'll basically be useless.
+In general, I'd recommend that too. Expiration dates allow the key to eventually stop working even if you can't revoke it. I personally set my signing keys to last 3 years. But if you don't set an expiration date, GitHub still lets you revoke your key in case it's ever compromised. After the key has expired, GitHub won't mark future commits signed with that key as verified, so if someone has a hold of it, it'll basically be useless.
 
-It's also possible to renew your signing keys as long as you still have all of the information about them, resetting the expiration date so they last longer. But you can also make a new one if you're having trouble with that. You should also make a new one (and give it a new passphrase) if you think it was compromised.
+When your key expires or if it is compromised, you should make a new one (and give it a new passphrase).
 
 ### Should I choose a strong passphrase?
 
-Yes. If your key is compromised, it's not game over as long as your passphrase is strong - it can still protect your signing key so it can't be used by other people. It's similar to a PIN for a credit or debit card. Even if you have to write it down to remember it, it is still important to use long, strong passphrases since hackers will have unlimited attempts to break the encryption.
+Yes. If your key is compromised, it's not game over as long as your passphrase is strong - it's the second factor protecting your signing key so it can't be used by other people, even if they get a hold of it. It's similar to a PIN for a credit or debit card. Even if you have to save your passphrase somewhere to remember it, it is still important to use long, strong passphrases since hackers will have unlimited attempts to break the encryption.
 
 After your key is compromised, though, you'll probably want to work on switching to a new signing key and revoking the old one, just in case.
 
